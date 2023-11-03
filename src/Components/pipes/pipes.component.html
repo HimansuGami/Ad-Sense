@@ -1,0 +1,29 @@
+<h1>{{ "Himansu" | uppercase }}</h1>
+<h1>{{ "Himansu" | lowercase }}</h1>
+<h1>{{ "Himansu gami" | titlecase }}</h1>
+<h1>{{ "1231243.212" | currency : "EUR" }}</h1>
+<h1>{{ "1231243.212" | percent }}</h1>
+<h1>{{ date | date : "short" | lowercase }}</h1>
+<h1>{{ jsonObject | json }}</h1>
+
+<hr />
+
+<h1 style="color: red; display: flex; justify-content: center">
+  Parameterized Pipes
+</h1>
+
+<hr />
+<h1>{{ 1234 | currency : "INR" }}</h1>
+<h1>{{ date | date : "MM-dd-yy" }}</h1>
+<h1>{{ percentage | percent : "3.3-4" }}</h1>
+
+<hr />
+<h1 style="color: red; display: flex; justify-content: center">
+  Chaining Pipes
+</h1>
+<hr />
+
+<h1>{{ jsonObject | json | uppercase }}</h1>
+<h1>{{ date | date : "long" | lowercase }}</h1>
+<h1>{{ date | date : "long" | uppercase }}</h1>
+<h1>{{ "wdasdfsdfsafdsaasdaqdsadasdsadasdasdsadwf" | truncatePipe : 20 }}</h1>
